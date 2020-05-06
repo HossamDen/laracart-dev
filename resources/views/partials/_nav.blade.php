@@ -15,7 +15,7 @@
         <li class="{{ setActivePage('about-us') }}"><a href="{{ route('about-us') }}">About</a></li>
         <li><a href="#">Artisans</a></li>
         <li><a href="https://github.com/HossamDen/laracart-dev">Planets</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="{{ setActivePage('about-us') }}"><a href="{{ route('contact-us') }}">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
