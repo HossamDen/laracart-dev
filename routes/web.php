@@ -11,8 +11,16 @@
 |
 */
 
+use App\Mail\Contact;
+
 Route::get('/', "pagesController@home")->name('home');
 
-Route::get('about', "pagesController@about")->name('about-us');
+Route::get('about-us', "pagesController@about")->name('about');
 
-Route::get('contact', "contactController@create")->name('contact-us');
+Route::get('contact-us', "contactController@create")->name('contact.create');
+
+Route::post('contact' , "contactController@store")->name('contact.store');
+
+Route::get('/mail' , function(){
+	return new Contact;
+});

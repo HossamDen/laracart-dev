@@ -12,10 +12,10 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="{{ setActivePage('home') }}"><a href="{{ route('home') }}">Home</a></li>
-        <li class="{{ setActivePage('about-us') }}"><a href="{{ route('about-us') }}">About</a></li>
+        <li class="{{ setActivePage('about') }}"><a href="{{ route('about') }}">About</a></li>
         <li><a href="#">Artisans</a></li>
         <li><a href="https://github.com/HossamDen/laracart-dev">Planets</a></li>
-        <li class="{{ setActivePage('about-us') }}"><a href="{{ route('contact-us') }}">Contact</a></li>
+        <li class="{{ setActivePage('contact.create') }}"><a href="{{ route('contact.create') }}">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
