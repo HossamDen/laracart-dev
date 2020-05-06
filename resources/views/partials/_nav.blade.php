@@ -11,8 +11,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="{{ route('home') }}">Home</a></li>
-        <li><a href="{{ route('about-us') }}">About</a></li>
+        <li class="{{ setActivePage('home') }}"><a href="{{ route('home') }}">Home</a></li>
+        <li class="{{ setActivePage('about-us') }}"><a href="{{ route('about-us') }}">About</a></li>
         <li><a href="#">Artisans</a></li>
         <li><a href="https://github.com/HossamDen/laracart-dev">Planets</a></li>
         <li><a href="#">Contact</a></li>

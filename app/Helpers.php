@@ -10,3 +10,12 @@ if(!function_exists("pageTitle")){
 		}
 	}
 }
+
+
+if (!function_exists("setActivePage")) {
+	function setActivePage($route)
+	{
+		return Route::is($route) ? "active" : "";
+	}
+}
+
